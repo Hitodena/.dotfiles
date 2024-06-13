@@ -1,0 +1,59 @@
+* {
+    font-family: "JetBrains Mono";
+    transition: all 350ms ease;
+    box-shadow: none;
+}
+ 
+window {
+    background: rgba(0, 0, 0, 0.3);
+}
+ 
+button {
+    color: #FFFFFF;  /* in future: with pywal */ 
+    font-size: 15px;
+
+    margin: 5px;
+    border-radius: 10px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22%;
+ 
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid #FFFFFF
+}
+ 
+button:focus,
+button:active {
+    background-color: rgba(0, 0, 0, 0.7);  
+    border: 3px solid rgb(197, 37, 37);  /* in future: with pywal */ 
+}
+
+button:hover {
+    background-color: rgb(66, 66, 66);
+}
+ 
+#lock {
+    background-image: image(url("icons/lock.png"));
+}
+ 
+#logout {
+    background-image: image(url("icons/logout.png"));
+}
+ 
+#suspend {
+    background-image: image(url("icons/suspend.png"));
+}
+ 
+#hibernate {
+    background-image: image(url("icons/hibernate.png"));
+}
+ 
+#shutdown {
+    background-image: image(url("icons/shutdown.png"));
+}
+ 
+#reboot {
+    background-image: image(url("icons/reboot.png"));
+}
+ 

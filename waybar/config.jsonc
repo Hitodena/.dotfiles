@@ -1,0 +1,51 @@
+{
+    //  General
+    "layer": "top",
+    "margin-top": 10,
+    "margin-bottom": -10,
+
+    //  Load Modules From File
+    "include": ["~/.dotfiles/waybar/modules.json"],
+
+    //  Modules Left
+    "modules-left": [
+        "custom/exit",
+        "group/hardware",
+        "group/quicklinks",
+        "tray"
+    ],
+
+    //  Modules Center
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    //  Modules Right
+    "modules-right": [
+        "custom/updates",
+        "network",
+        "pulseaudio",
+        "hyprland/language",
+        "clock"
+    ],
+
+
+    //  Group HardWare
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "temperature",
+            "memory"
+        ]
+    },
+
+    //  Group QuickLinks
+    "group/links": {
+        "orientation": "vertical",
+        "modules": [
+            "custom/ms-teams",
+            "custom/chat-gpt"
+        ]
+    }
+}
