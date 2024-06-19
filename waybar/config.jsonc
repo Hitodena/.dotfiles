@@ -3,15 +3,16 @@
     "layer": "top",
     "margin-top": 10,
     "margin-bottom": -10,
+    "spacing": 4,
 
     //  Load Modules From File
     "include": ["~/.dotfiles/waybar/modules.json"],
 
     //  Modules Left
     "modules-left": [
-        "custom/exit",
+        "custom/power",
         "group/hardware",
-        "group/quicklinks",
+        "group/quick-links",
         "tray"
     ],
 
@@ -29,23 +30,27 @@
         "clock"
     ],
 
-
     //  Group HardWare
     "group/hardware": {
-        "orientation": "horizontal",
+        "orientation": "inherit",
         "modules": [
             "cpu",
-            "temperature",
-            "memory"
+            "memory",
+            "temperature"
         ]
     },
 
     //  Group QuickLinks
-    "group/links": {
-        "orientation": "vertical",
+    "group/quick-links": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "q-links",
+            "transition-left-to-right": true
+        },
         "modules": [
-            "custom/ms-teams",
-            "custom/chat-gpt"
+            "custom/linkapp",
+            "custom/ms-teams"
         ]
     }
 }

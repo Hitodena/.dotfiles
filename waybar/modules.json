@@ -1,7 +1,38 @@
-{
-    "custom/exit": {
+{ 
+    "custom/power": {
         "format": "",
         "on-click": "wlogout",
         "tooltip-format": "Power Menu"
+    },
+
+    "cpu": {
+        "interval": 3,
+        "format": " {usage}%",
+        "on-click": "alacritty -e btop"
+    },
+
+    "memory": {
+        "interval": 3,
+        "format": " {}%",
+        "on-click": "alacritty -e btop"
+    },
+
+    "temperature": {
+        "interval": 3,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "format": " {temperatureC}°C"
+    },
+
+    "custom/linkapp": {
+        "format": " ",
+        "on-click": "~/.dotfiles/.settings/browser.sh",
+        "tooltip-format": "Open browser"
+    },
+
+    "custom/ms-teams": {
+        "format": "<span size='18000'>󰊻 </span>",
+        "on-click": "firefox -new-window https://teams.microsoft.com/v2/",
+        "tooltip-format": "Open MS Teams"
     }
 }
+

@@ -7,7 +7,3 @@
 :set softtabstop=4
 :set autoindent
 
-call plug#begin()
-
-call plug#end()
-
