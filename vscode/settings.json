@@ -1,0 +1,202 @@
+{
+	//  Window -----------------------------------------------------------------
+
+	"window.autoDetectColorScheme": false,
+	"window.titleBarStyle": "custom",
+	"window.title": "${activeFolderMedium}$/${activeEditorShort}",
+	"window.closeWhenEmpty": false,
+	"window.menuBarVisibility": "toggle",
+	"window.openFilesInNewWindow": "off",
+	"window.customMenuBarAltFocus": false,
+	"window.commandCenter": false,
+	"window.density.editorTabHeight": "default",
+	"window.customTitleBarVisibility": "never",
+
+	//  -----------------------------------------------------------------------
+
+	//  Security --------------------------------------------------------------
+
+	"security.workspace.trust.enabled": false,
+
+	//  -----------------------------------------------------------------------
+
+	//  Workbench -------------------------------------------------------------
+
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.editor.empty.hint": "hidden",
+
+	//  Themes
+	"workbench.colorTheme": "Tokyo Night AltSynt",
+	"workbench.productIconTheme": "fluent-icons",
+	"workbench.iconTheme": "symbols",
+
+	//  Appearance
+	"workbench.statusBar.visible": false,
+	"workbench.activityBar.location": "hidden",
+	"workbench.activityBar.iconClickBehavior": "toggle",
+	"workbench.layoutControl.enabled": false,
+	"workbench.editor.showTabs": "multiple",
+	"workbench.sideBar.location": "right",
+
+	//  -----------------------------------------------------------------------
+
+	//  Editor ----------------------------------------------------------------
+
+	//  Fonts, tabs, symbols
+	"editor.fontFamily": "JetBrainsMono Nerd Font",
+	"editor.fontSize": 14,
+	"editor.tabSize": 4,
+	"editor.lineHeight": 1.5,
+	"editor.fontLigatures": true,
+	"editor.renderControlCharacters": true,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+
+	//  Wrap
+	"editor.wordWrap": "off",
+	"editor.wrappingIndent": "none",
+	"editor.wordWrapColumn": 180,
+
+	// Indent
+	"editor.autoIndent": "full",
+	"editor.indentSize": "tabSize",
+	"editor.detectIndentation": true,
+
+	//  Comfy
+	"diffEditor.ignoreTrimWhitespace": true,
+	"editor.autoClosingBrackets": "always",
+	"editor.folding": true,
+	"editor.renderWhitespace": "selection",
+
+	//  Suggestions
+	"editor.wordBasedSuggestions": "currentDocument",
+	"editor.suggestSelection": "first",
+	"editor.quickSuggestionsDelay": 0,
+	"editor.inlineSuggest.enabled": true,
+
+	//  Cursor and scroll
+	"editor.cursorBlinking": "expand",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorStyle": "line-thin",
+	"editor.scrollBeyondLastLine": true,
+	"editor.smoothScrolling": true,
+	"editor.linkedEditing": true,
+
+	//  Appearance
+	"editor.glyphMargin": false,
+	"editor.minimap.enabled": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "visible",
+	"editor.rulers": [120],
+
+	//  Format
+	"editor.formatOnSave": true,
+	"editor.gotoLocation.multipleDeclarations": "goto",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit"
+	},
+
+	//  -----------------------------------------------------------------------
+
+	//  Terminal --------------------------------------------------------------
+
+	"terminal.integrated.cursorBlinking": false,
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.fontFamily": "JetBrainsMono Nerd",
+	"terminal.integrated.fontSize": 14,
+
+	//  -----------------------------------------------------------------------
+
+	//  Breadcrumbs -----------------------------------------------------------
+
+	"breadcrumbs.enabled": false,
+
+	//  -----------------------------------------------------------------------
+
+	//  Languages -------------------------------------------------------------
+
+	//  Python
+	"[python]": {
+		"editor.formatOnType": true,
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.wordWrapColumn": 99,
+		"editor.rulers": [99],
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "always"
+		}
+	},
+
+	"python.analysis.typeCheckingMode": "standard",
+
+	//		Lint
+	"flake8.args": ["--max-line-length=99", "--ignore=C812,E262,W503"],
+
+	//		Format
+	"black-formatter.args": ["--line-length=99"],
+
+	//		Server
+	"python.languageServer": "Pylance",
+
+	//		Competition
+	"python.analysis.autoFormatStrings": true,
+	"python.analysis.autoImportCompletions": true,
+	"vsintellicode.python.completionsEnabled": true,
+	"python.analysis.completeFunctionParens": true,
+
+	//		Auto virtual environment
+	"python.terminal.activateEnvironment": true,
+	"python.terminal.activateEnvInCurrentTerminal": true,
+
+	//  HTML
+	"[html]": {
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"html.autoClosingTags": true,
+	"html.format.enable": true,
+
+	//  JS
+	"javascript.autoClosingTags": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.format.semicolons": "remove",
+
+	//  TS
+	"typescript.autoClosingTags": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.quoteStyle": "single",
+	"typescript.format.semicolons": "remove",
+
+	//  Prettier
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+
+	//  -----------------------------------------------------------------------
+
+	//  Files -----------------------------------------------------------------
+
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 500,
+	"symbols.hidesExplorerArrows": true,
+	"explorer.compactFolders": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+
+	//  -----------------------------------------------------------------------
+
+	//  Etc -------------------------------------------------------------------
+	"telemetry.telemetryLevel": "off",
+	"git.openRepositoryInParentFolders": "always",
+	//  -----------------------------------------------------------------------
+
+	//  Extensions ------------------------------------------------------------
+	"vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+	"RainbowBrackets.depreciation-notice": false,
+	//  -----------------------------------------------------------------------
+}
+

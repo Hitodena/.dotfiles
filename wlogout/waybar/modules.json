@@ -1,0 +1,32 @@
+{ 
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip-format": "Power Menu"
+    },
+
+    "cpu": {
+        "interval": 3,
+        "format": " {usage}%",
+        "on-click": "alacritty -e btop"
+    },
+
+    "memory": {
+        "interval": 3,
+        "format": " {}%",
+        "on-click": "alacritty -e btop"
+    },
+
+    "temperature": {
+        "interval": 3,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "format": " {temperatureC}°C"
+    },
+
+    "custom/browser": {
+        "format": "",
+        "on-click": "~/.dotfiles/.settings/browser.sh",
+        "tooltip-format": "Open browser"
+    }
+}
+

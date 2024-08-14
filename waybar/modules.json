@@ -23,16 +23,10 @@
         "format": " {temperatureC}°C"
     },
 
-    "custom/linkapp": {
-        "format": " ",
+    "custom/browser": {
+        "format": "",
         "on-click": "~/.dotfiles/.settings/browser.sh",
         "tooltip-format": "Open browser"
-    },
-
-    "custom/ms-teams": {
-        "format": "<span size='18000'>󰊻 </span>",
-        "on-click": "firefox -new-window https://teams.microsoft.com/v2/",
-        "tooltip-format": "Open MS Teams"
     }
 }
 

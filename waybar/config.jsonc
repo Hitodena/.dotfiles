@@ -12,7 +12,7 @@
     "modules-left": [
         "custom/power",
         "group/hardware",
-        "group/quick-links",
+        "custom/browser",
         "tray"
     ],
 
@@ -24,6 +24,7 @@
     //  Modules Right
     "modules-right": [
         "custom/updates",
+		"bluetooth",
         "network",
         "pulseaudio",
         "hyprland/language",
@@ -38,19 +39,5 @@
             "memory",
             "temperature"
         ]
-    },
-
-    //  Group QuickLinks
-    "group/quick-links": {
-        "orientation": "inherit",
-        "drawer": {
-            "transition-duration": 500,
-            "children-class": "q-links",
-            "transition-left-to-right": true
-        },
-        "modules": [
-            "custom/linkapp",
-            "custom/ms-teams"
-        ]
-    }
+	}
 }

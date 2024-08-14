@@ -1,0 +1,25 @@
+[
+	{
+		"key": "ctrl+[Backquote]",
+		"command": "workbench.action.togglePanel"
+	},
+	{
+		"key": "ctrl+alt+up",
+		"command": "editor.action.copyLinesUpAction"
+	},
+	{
+		"key": "ctrl+alt+down",
+		"command": "editor.action.copyLinesDownAction"
+	},
+	{
+		"key": "a",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "shift+a",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus && !inputFocus"
+	}
+]
+
