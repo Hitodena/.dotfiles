@@ -10,7 +10,7 @@
 	"window.customMenuBarAltFocus": false,
 	"window.commandCenter": false,
 	"window.density.editorTabHeight": "default",
-	"window.customTitleBarVisibility": "never",
+	"window.customTitleBarVisibility": "auto",
 
 	//  -----------------------------------------------------------------------
 
@@ -32,12 +32,14 @@
 	"workbench.iconTheme": "symbols",
 
 	//  Appearance
-	"workbench.statusBar.visible": false,
+	"workbench.statusBar.visible": true,
 	"workbench.activityBar.location": "hidden",
 	"workbench.activityBar.iconClickBehavior": "toggle",
 	"workbench.layoutControl.enabled": false,
 	"workbench.editor.showTabs": "multiple",
+	"workbench.editor.enablePreview": false,
 	"workbench.sideBar.location": "right",
+	"workbench.tips.enabled": false,
 
 	//  -----------------------------------------------------------------------
 
@@ -61,10 +63,13 @@
 	"editor.autoIndent": "full",
 	"editor.indentSize": "tabSize",
 	"editor.detectIndentation": true,
+	"editor.guides.indentation": true,
 
 	//  Comfy
+	"diffEditor.renderSideBySide": false,
 	"diffEditor.ignoreTrimWhitespace": true,
 	"editor.autoClosingBrackets": "always",
+	"editor.copyWithSyntaxHighlighting": false,
 	"editor.folding": true,
 	"editor.renderWhitespace": "selection",
 
@@ -73,6 +78,7 @@
 	"editor.suggestSelection": "first",
 	"editor.quickSuggestionsDelay": 0,
 	"editor.inlineSuggest.enabled": true,
+	"editor.snippetSuggestions": "top",
 
 	//  Cursor and scroll
 	"editor.cursorBlinking": "expand",
@@ -83,11 +89,16 @@
 	"editor.linkedEditing": true,
 
 	//  Appearance
+	"editor.stickyScroll.enabled": false,
 	"editor.glyphMargin": false,
 	"editor.minimap.enabled": false,
 	"editor.scrollbar.horizontal": "hidden",
 	"editor.scrollbar.vertical": "visible",
-	"editor.rulers": [120],
+	"editor.rulers": [180],
+	"editor.renderLineHighlight": "none",
+	"editor.lightbulb.enabled": "off",
+	"editor.occurrencesHighlight": "off",
+	"editor.selectionHighlight": false,
 
 	//  Format
 	"editor.formatOnSave": true,
@@ -102,7 +113,7 @@
 	//  Terminal --------------------------------------------------------------
 
 	"terminal.integrated.cursorBlinking": false,
-	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.cursorStyle": "block",
 	"terminal.integrated.fontFamily": "JetBrainsMono Nerd",
 	"terminal.integrated.fontSize": 14,
 
@@ -180,6 +191,9 @@
 
 	//  Files -----------------------------------------------------------------
 
+	"files.trimFinalNewlines": true,
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
 	"files.autoSave": "afterDelay",
 	"files.autoSaveDelay": 500,
 	"symbols.hidesExplorerArrows": true,
@@ -190,13 +204,25 @@
 	//  -----------------------------------------------------------------------
 
 	//  Etc -------------------------------------------------------------------
+
 	"telemetry.telemetryLevel": "off",
 	"git.openRepositoryInParentFolders": "always",
+	"problems.decorations.enabled": false,
+	"git.decorations.enabled": false,
+
 	//  -----------------------------------------------------------------------
 
 	//  Extensions ------------------------------------------------------------
+
 	"vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
 	"RainbowBrackets.depreciation-notice": false,
+
+	//  -----------------------------------------------------------------------
+
+	//  Custom styles ---------------------------------------------------------
+	"vscode_custom_css.imports": [
+		"file:///home/lavash/.dotfiles/vscode/vscode-styles.css"
+	]
 	//  -----------------------------------------------------------------------
 }
 

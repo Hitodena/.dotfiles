@@ -1,9 +1,5 @@
 [
 	{
-		"key": "ctrl+[Backquote]",
-		"command": "workbench.action.togglePanel"
-	},
-	{
 		"key": "ctrl+alt+up",
 		"command": "editor.action.copyLinesUpAction"
 	},
@@ -18,8 +14,12 @@
 	},
 	{
 		"key": "shift+a",
-		"command": "explorer.newFile",
+		"command": "explorer.newFolder",
 		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.toggleSidebarVisibility"
 	}
 ]
 
