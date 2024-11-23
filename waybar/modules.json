@@ -1,32 +1,44 @@
-{ 
-    "custom/power": {
-        "format": "",
-        "on-click": "wlogout",
-        "tooltip-format": "Power Menu"
-    },
+{
+	"custom/power": {
+		"format": "",
+		"on-click": "wlogout",
+		"tooltip-format": "Power Menu"
+	},
 
-    "cpu": {
-        "interval": 3,
-        "format": " {usage}%",
-        "on-click": "alacritty -e btop"
-    },
+	"cpu": {
+		"interval": 3,
+		"format": " {usage}%"
+	},
 
-    "memory": {
-        "interval": 3,
-        "format": " {}%",
-        "on-click": "alacritty -e btop"
-    },
+	"memory": {
+		"interval": 3,
+		"format": " {}%",
+		"tooltip-format": "{avail:0.1f}GB Free"
+	},
 
-    "temperature": {
-        "interval": 3,
-        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "format": " {temperatureC}°C"
-    },
+	"temperature": {
+		"interval": 3,
+		"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+		"format": " {temperatureC}°C"
+	},
 
-    "custom/browser": {
-        "format": "",
-        "on-click": "~/.dotfiles/.settings/browser.sh",
-        "tooltip-format": "Open browser"
-    }
+	"tray": {},
+	"bluetooth": {
+		"format-on": "󰂯",
+		"format-off": "󰂲",
+		"format-disabled": "󰂲",
+		"format-connected": "󰂱 {num_connections} connected",
+		"tooltip-format": "{controller_alias}\t{controller_address}",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+	},
+
+	"network": {
+		"format-icons": {
+			"wifi": ["󰤟", "󰤢", "󰤥", "󰤨"],
+			"ethernet": ["󰈁"],
+			"disconnected": ["󰪎"]
+		}
+	}
 }
-

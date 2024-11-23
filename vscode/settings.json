@@ -23,10 +23,9 @@
 	//  Workbench -------------------------------------------------------------
 
 	"workbench.startupEditor": "newUntitledFile",
+	"workbench.editor.enablePreview": false,
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.editor.empty.hint": "hidden",
-
-	//  Themes
 	"workbench.colorTheme": "Tokyo Night AltSynt",
 	"workbench.productIconTheme": "fluent-icons",
 	"workbench.iconTheme": "symbols",
@@ -37,7 +36,6 @@
 	"workbench.activityBar.iconClickBehavior": "toggle",
 	"workbench.layoutControl.enabled": false,
 	"workbench.editor.showTabs": "multiple",
-	"workbench.editor.enablePreview": false,
 	"workbench.sideBar.location": "right",
 	"workbench.tips.enabled": false,
 
@@ -129,7 +127,7 @@
 
 	//  Python
 	"[python]": {
-		"editor.formatOnType": true,
+		"editor.formatOnType": false,
 		"editor.formatOnPaste": true,
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "ms-python.black-formatter",
@@ -141,22 +139,17 @@
 	},
 
 	"python.analysis.typeCheckingMode": "standard",
-
 	//		Lint
-	"flake8.args": ["--max-line-length=99", "--ignore=C812,E262,W503"],
-
+	"flake8.args": ["--max-line-length=99", "--ignore=C812,E262,W503,F403,F401"],
 	//		Format
 	"black-formatter.args": ["--line-length=99"],
-
 	//		Server
 	"python.languageServer": "Pylance",
-
 	//		Competition
 	"python.analysis.autoFormatStrings": true,
 	"python.analysis.autoImportCompletions": true,
 	"vsintellicode.python.completionsEnabled": true,
 	"python.analysis.completeFunctionParens": true,
-
 	//		Auto virtual environment
 	"python.terminal.activateEnvironment": true,
 	"python.terminal.activateEnvInCurrentTerminal": true,
@@ -197,6 +190,7 @@
 	"files.autoSave": "afterDelay",
 	"files.autoSaveDelay": 500,
 	"symbols.hidesExplorerArrows": true,
+	"explorer.confirmPasteNative": false,
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
@@ -214,15 +208,11 @@
 
 	//  Extensions ------------------------------------------------------------
 
-	"vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-	"RainbowBrackets.depreciation-notice": false,
+	"RainbowBrackets.depreciation-notice": false
 
 	//  -----------------------------------------------------------------------
 
 	//  Custom styles ---------------------------------------------------------
-	"vscode_custom_css.imports": [
-		"file:///home/lavash/.dotfiles/vscode/vscode-styles.css"
-	]
+
 	//  -----------------------------------------------------------------------
 }
-
